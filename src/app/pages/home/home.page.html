@@ -10,9 +10,10 @@
   <!--
   <app-header-condense [title]="'aaa'"></app-header-condense>
   -->
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-button expand="block" class="ion-margin" color="primary" (click)="get()">Get</ion-button>
+    <ion-button expand="block" class="ion-margin" color="secondary" (click)="set()">Set</ion-button>
+    <ion-button expand="block" class="ion-margin" color="warning" (click)="remove()">Remove</ion-button>
+    <ion-button expand="block" class="ion-margin" color="danger" (click)="clear()">Clear</ion-button>
+  </ion-list>
 </ion-content>
